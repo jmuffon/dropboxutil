@@ -27,14 +27,14 @@ class DropboxUtil extends Dropbox
     {
         try {
             // Connexion à la Dropbox
-            $this->dropbox_key = config('project.dropbox_key', "");
-            $this->dropbox_secret = config('project.dropbox_secret', "");
-            $this->dropbox_token = config('project.dropbox_token', "");
+            $this->dropbox_key = config('dropboxutil.dropbox_key', "");
+            $this->dropbox_secret = config('dropboxutil.dropbox_secret', "");
+            $this->dropbox_token = config('dropboxutil.dropbox_token', "");
 
             $this->app = new DropboxApp($this->dropbox_key, $this->dropbox_secret, $this->dropbox_token);
             $this->dropbox = new Dropbox($this->app);
         } catch (Exception $e) {
-            return null;
+            return $e->getMessage();
         }
     }
 
