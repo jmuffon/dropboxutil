@@ -1,0 +1,21 @@
+{
+    "name": "jmuffon/dropbox",
+    "description": "Dropbox utilities",
+    "type": "library",
+    "require": {
+        "kunalvarma05/dropbox-php-sdk": "^0.2.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jean-Marc",
+            "email": "jeanmarc.frei@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        " psr-4 ": {
+            " Jmuffon\\Dropbox\\ ": " src / "
+        }
+    }
+}
