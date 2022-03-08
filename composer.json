@@ -14,8 +14,8 @@
     ],
     "minimum-stability": "dev",
     "autoload": {
-        " psr-4 ": {
-            "Jmuffon\\Dropbox\\": " src / "
+        "psr-4": {
+            "Jmuffon\\Dropbox\\": "src/"
         }
     }
 }
