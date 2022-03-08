@@ -5,7 +5,7 @@ namespace Jmuffon\Dropbox;
 use Exception;
 use Kunnu\Dropbox\DropboxApp;
 use Kunnu\Dropbox\Dropbox;
-use PhpParser\Node\Expr\Throw_;
+
 
 /**
  * Classe utilitaire permetant de se connecter à un compte Dropbox et de manipuler des fichiers/dossiers
@@ -27,9 +27,9 @@ class DropboxUtil extends Dropbox
     {
         try {
             // Connexion à la Dropbox
-            $this->dropbox_key = config('project.dropbox_key', "939hoeyuqyod6aa");
-            $this->dropbox_secret = config('project.dropbox_secret', "hq8jxl0gikylowe");
-            $this->dropbox_token = config('project.dropbox_token', "m7EwYv6aRzcAAAAAAAAAAchFL_1oU62ywu6Rvsi90wkuyESk7MfTBbnrRniNb_jT");
+            $this->dropbox_key = config('project.dropbox_key', "");
+            $this->dropbox_secret = config('project.dropbox_secret', "");
+            $this->dropbox_token = config('project.dropbox_token', "");
 
             $this->app = new DropboxApp($this->dropbox_key, $this->dropbox_secret, $this->dropbox_token);
             $this->dropbox = new Dropbox($this->app);
