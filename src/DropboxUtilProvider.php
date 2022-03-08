@@ -1,6 +1,6 @@
 <?php
 
-namespace Jmuffon\Dropbox\Providers;
+namespace Jmuffon\Dropbox;
 
 use Illuminate\Support\ServiceProvider;
 
